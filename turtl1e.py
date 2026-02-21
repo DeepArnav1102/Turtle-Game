@@ -184,7 +184,6 @@ def startgame():
     root.button_penS.pack_forget()
     root.button_penB.pack_forget()
     root.entry_pen.pack_forget()
-    root.label_pen2.pack_forget()
     root.label_penfill.pack_forget()
     root.entry_penfill.pack_forget()
     root.Label_warning.pack_forget()
@@ -257,13 +256,7 @@ def pencolor():
                             font=("Arial", 35),
                             foreground='yellow',
                             background=blend_color)
-    root.label_pen2=tk.Label(root,
-                             text="(without spaces)",
-                             font=("Arial", 23),
-                             foreground='yellow',
-                             background=blend_color)
     root.label_pen.pack(padx=100,pady=20)
-    root.label_pen2.pack(padx=100,pady=5)
     root.entry_pen=tk.Entry(root, font=("Arial", 23))
     root.entry_pen.pack(padx=25,pady=25)
     root.label_penfill=tk.Label(root,
@@ -307,7 +300,6 @@ def bgcolour():
         root.button_penS.pack_forget()
         root.button_penB.pack_forget()
         root.entry_pen.pack_forget()
-        root.label_pen2.pack_forget()
         root.label_penfill.pack_forget()
         root.entry_penfill.pack_forget()
         root.Label_warning.pack_forget()
